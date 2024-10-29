@@ -28,14 +28,14 @@ const serviceData = [
     route: "/websitedevelopment",
   },
   {
-    id: 2,
+    id: 4,
     title: "Desktop Application Development",
     description:
       "Delivering robust desktop applications designed to enhance productivity and streamline operations.",
     route: "/mobiledevelopment",
   },
   {
-    id: 3,
+    id: 5,
     title: "Custom AI Applications ",
     description:
       "Leveraging artificial intelligence to create smart applications that automate tasks, improve decision-making, and drive innovation.",
@@ -53,7 +53,7 @@ const ServicesCards: React.FC = () => {
         {serviceData.map((service) => (
           <div
             key={service.id}
-            className="shadow-md rounded-lg p-6 transition-all bg-white hover:bg-bglburegistrationbanner hover:text-white mt-6"
+            className="shadow-md rounded-lg p-6 transition-all bg-gray-200 hover:bg-bglburegistrationbanner hover:text-white mt-6"
             onMouseEnter={() => setHoveredServiceId(service.id)}
             onMouseLeave={() => setHoveredServiceId(null)}
           >
@@ -100,6 +100,36 @@ const ServicesCards: React.FC = () => {
                     ></div>
                   )}
                   {service.id === 3 && (
+                    <div
+                      style={{
+                        width: "67px",
+                        height: "67px",
+                        backgroundImage: `url(${websitedevelopment})`,
+                        backgroundSize: "cover",
+                        filter:
+                          hoveredServiceId === service.id
+                            ? "brightness(0) saturate(100%) invert(38%) sepia(51%) saturate(552%) hue-rotate(196deg) brightness(100%) contrast(91%)"
+                            : "none",
+                        transition: "filter 0.3s ease",
+                      }}
+                    ></div>
+                  )}
+                  {service.id === 4 && (
+                    <div
+                      style={{
+                        width: "67px",
+                        height: "67px",
+                        backgroundImage: `url(${mobiledevelopment})`,
+                        backgroundSize: "cover",
+                        filter:
+                          hoveredServiceId === service.id
+                            ? "brightness(0) saturate(100%) invert(38%) sepia(51%) saturate(552%) hue-rotate(196deg) brightness(100%) contrast(91%)"
+                            : "none",
+                        transition: "filter 0.3s ease",
+                      }}
+                    ></div>
+                  )}
+                  {service.id === 5 && (
                     <div
                       style={{
                         width: "67px",

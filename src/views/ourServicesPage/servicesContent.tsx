@@ -17,7 +17,7 @@ const Services: React.FC = () => {
           <p className="text-white text-3xl md:text-5xl font-bold">
             OUR SERVICES
           </p>
-          <h1 className="text-white font-normal text-sm md:text-xl">
+          <h1 className="text-white font-normal text-sm md:text-lg">
           Hillance empowers businesses with tailored digital solutions, from mobile, web, and desktop apps to AI-driven innovations and engaging UI/UX design. Our expertise helps you drive growth, enhance operations, and achieve success.
           </h1>
         </div>

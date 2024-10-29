@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <IoMdCall className="bg-[#5054A4] hover:bg-[#5b60b8] rounded-xl text-white text-3xl md:text-2xl p-2 md:p-1 mr-1" />
             <span className="text-xl xl:text-base lg:text-sm md:text-sm text-[#605E5E]">
-              +964 770 783 8768 The contact details:
+              +964 770 783 8768
             </span>
           </div>
           <div className="flex items-center">

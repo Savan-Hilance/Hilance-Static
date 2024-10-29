@@ -3,7 +3,6 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import humansrobots from "../assets/images/humans-robots.png";
 import rectangle from "../assets/images/Rectangle.png";
 import { useNavigate } from "react-router-dom";
 
@@ -170,14 +169,22 @@ const Footer: React.FC = () => {
               <div className=" flex items-center">
                 <CallIcon className="mr-2" />
                 <p className="text-base font-light">
-                  +964 786 278 9084 <br />
-                  +971 50 943 7956
+                  +964 770 783 8768 <br />
+                  +971 50 699 7120
                 </p>
               </div>
             </div>
             <div className="flex items-start mb-4">
               <EmailIcon className="mr-2" />
-              <p className="text-base font-light">info@hilance.app</p>
+              <span className="text-base font-light">
+                <a
+                  href="https://info@hilance.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  info@hilance.app
+                </a>
+              </span>
             </div>
             <div className="flex items-start">
               <LocationOnIcon className="mr-2" />

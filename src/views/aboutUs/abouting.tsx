@@ -58,7 +58,7 @@ const Abouting = () => {
             user-centered applications to support business success. We empower
             our clients to thrive in the digital age.
           </p>
-          <p className="text-white font-normal text-sm md:text-[17 px]">
+          <p className="text-white font-normal text-sm md:text-[17px]">
             Looking for a specialized application, captivating UI/UX design, or
             a comprehensive digital strategy? Hilance is dedicated to delivering
             results-driven solutions crafted to meet your unique needs. Let’s

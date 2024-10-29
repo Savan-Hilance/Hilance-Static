@@ -262,7 +262,15 @@ const PrivacyPolicy: React.FC = () => {
             </p>
             <p className="text-sm py-3 xl:text-lg text-[#605e5e]">
               Email:{" "}
-              <span className="text-blue-500 underline">info@hilance.app</span>
+              <span className="header-icon xl:text-base lg:text-sm md:text-sm text-xl text-blue-500 underline">
+                <a
+                  href="https://info@hilance.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  info@hilance.app
+                </a>
+              </span>
             </p>
             <p className="text-sm py-3 xl:text-lg text-[#605e5e]">
               Address: Company Address

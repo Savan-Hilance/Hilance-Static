@@ -6,7 +6,6 @@ import project from "../../assets/svg/project.svg";
 import clients from "../../assets/svg/clients.svg";
 import partner from "../../assets/svg/partner.svg";
 import won from "../../assets/svg/won.svg";
-import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import Contact from "../../components/contact";
 import caseStudies from "../../assets/images/caseStudies.jpg";
 import case1 from "../../assets/images/case1.jpg";
@@ -52,7 +51,7 @@ const CaseStudies = () => {
           <p className="text-white text-3xl md:text-5xl font-bold">
             CASE STUDIES
           </p>
-          <h1 className="text-white font-normal text-sm md:text-xl">
+          <h1 className="text-white font-normal text-sm md:text-lg">
             Explore how Hilance has helped businesses achieve their goals
             through innovative digital solutions. Our case studies highlight
             real-world examples of our expertise in mobile app development, web
@@ -89,14 +88,16 @@ const CaseStudies = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-8 lg:space-x-16 xl:space-x-32 mt-20">
-        <div className="w-full xl:w-[40rem] pl-4">
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32 mt-20 px-4">
+        <div className="w-full xl:w-[40rem] md:w-[30rem]">
           <p className="text-2xl font-semibold text-[#1A1A1A] pb-2">
             Why Choose Hilance?
           </p>
           <p className="text-[#605e5e] text-base leading-relaxed md:text-sm">
             Hillance combines expertise, innovation, and a commitment to
-            excellence to deliver results-driven digital solutions...
+            excellence to deliver results-driven digital solutions. With a focus
+            on mobile, web, and AI-powered applications, we empower businesses
+            to scale, enhance productivity, and drive success.
           </p>
           <div className="my-2 space-y-4 md:text-sm">
             <div>
@@ -143,31 +144,33 @@ const CaseStudies = () => {
             </div>
           </div>
         </div>
-        <img
-          className="w-full max-w-lg h-80 md:h-[26rem] mt-5 md:mt-0 relative"
-          src={studie2}
-          alt="missing"
-        />
-        <div className="block space-y-4 absolute md:right-48 lg:right-60 xl:right-[33rem]">
-          <div className="flex items-center space-x-3 bg-[#E5E7FF] rounded-md px-5 w-64 py-3">
-            <img src={case1} alt="Not Found" />
-            <div>
-              <p>Lorem Ipsum is</p>
-              <p className="text-xs">Lorem Ipsum dolor sit ament</p>
+        <div className="relative flex flex-col items-center space-y-6">
+          <img
+            className="w-full max-w-lg h-80 md:h-[26rem] mt-5 md:mt-0"
+            src={studie2}
+            alt="missing"
+          />
+          <div className="space-y-4 md:space-y-4 absolute xl:top-16 xl:right-64 md:top-16 md:right-24 top-12 right-32">
+            <div className="flex items-center space-x-3 bg-[#E5E7FF] rounded-md px-5 w-64 py-3">
+              <img src={case1} alt="Not Found" />
+              <div>
+                <p>Lorem Ipsum is</p>
+                <p className="text-xs">Lorem Ipsum dolor sit ament</p>
+              </div>
             </div>
-          </div>
-          <div className="flex items-center space-x-3 bg-[#E5E7FF] rounded-md px-5 w-64 py-3 ml-10">
-            <img src={case2} alt="Not Found" />
-            <div>
-              <p>Lorem Ipsum is</p>
-              <p className="text-xs">Lorem Ipsum dolor sit ament</p>
+            <div className="flex items-center space-x-3 bg-[#E5E7FF] rounded-md px-5 w-64 py-3 md:ml-10 ml:10">
+              <img src={case2} alt="Not Found" />
+              <div>
+                <p>Lorem Ipsum is</p>
+                <p className="text-xs">Lorem Ipsum dolor sit ament</p>
+              </div>
             </div>
-          </div>
-          <div className="flex items-center space-x-3 bg-[#E5E7FF] rounded-md px-5 w-64 py-3">
-            <img src={case3} alt="Not Found" />
-            <div>
-              <p>Lorem Ipsum is</p>
-              <p className="text-xs">Lorem Ipsum dolor sit ament</p>
+            <div className="flex items-center space-x-3 bg-[#E5E7FF] rounded-md px-5 w-64 py-3">
+              <img src={case3} alt="Not Found" />
+              <div>
+                <p>Lorem Ipsum is</p>
+                <p className="text-xs">Lorem Ipsum dolor sit ament</p>
+              </div>
             </div>
           </div>
         </div>
@@ -220,7 +223,6 @@ const CaseStudies = () => {
           ></img>
         </div>
       </div>
-
     </div>
   );
 };
